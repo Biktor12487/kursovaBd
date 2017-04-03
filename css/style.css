@@ -1,0 +1,215 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	border:0;
+}
+body
+{
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-position: left top;
+}
+.section
+{
+	width: 100%;
+	float: left;
+	clear: both;
+}
+.container
+{
+	width: 1000px;
+	margin:0 auto;
+}
+/*font*/
+@font-face {
+	font-family:OpenSans;
+	src:url("../fonts/OpenSans.ttf");
+}
+@font-face {
+	font-family:Roboto;
+	src:url("../fonts/Roboto.ttf");
+}
+
+/*nav*/
+.panelNav
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 70%;
+	padding: 10px 0;
+	margin-left: 30%;
+	border-bottom: 2px solid #0E00D6;
+}
+.panelNav a
+{
+	text-decoration: none;
+	color: #0E00D6;
+	font: 400 26px OpenSans;
+}
+.panelNav a:hover
+{
+	color: #0A0099;
+}
+/*add sector*/
+.sectorAddStudent
+{
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.rowAddStudent
+{
+	text-decoration: none;
+	color: #0E00D6;
+	font: 400 26px OpenSans;
+	width: 100%;
+	background: transparent;
+	border-bottom: 2px solid #0E00D6;
+}
+.rowAddStudent input , .rowAddStudent select
+{
+	color: #0E00D6;
+	font: 400 14px OpenSans;
+	background: transparent;
+}
+.seriaAndNumber 
+{
+	float: left;
+}
+.seriaAndNumber input
+{
+	max-width: 50%;
+	float: left;
+	display: block;
+}
+.rowAddStudent .labe
+{
+	color: #000;
+}
+.sectorAddStudent h2
+{
+	text-align: center;
+	padding: 40px 0 20px 0;
+	font: 600 32px Roboto;
+}
+.sectorAddStudent input[type="submit"]{
+	background-color: #FF9C00;
+	color:#fff;
+	font: 600 28px Roboto;
+	padding: 10px 30px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+.sectorAddStudent input[type="submit"]:hover
+{
+	opacity: .8;
+}
+/*struct page*/
+.listFaculty  
+{
+	margin: 20px 0;
+	float: left;
+	clear: both;
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 4px solid #0E00D6;
+}
+.listFaculty >div:nth-child(3) 
+{
+	overflow-y: scroll;
+	max-height: 300px;
+	margin: 20px 0;
+	min-width: 100%;
+}
+.listFaculty h2
+{
+	font:700 24px Roboto;
+	margin:20px;
+	color: #FF9C00;
+}
+.listFaculty .row
+{
+	float: left;
+	display: flex;
+	width: 95%;
+	margin-right: 5%;
+	align-items: center;
+	border-bottom: 1px solid #0E00D6;
+	padding: 5px 0;
+}
+.listFaculty .row span
+{
+	font: 400 16px OpenSans;
+}
+.listFaculty .row a
+{
+	font: 400 16px Roboto;
+}
+.listFaculty .row >*
+{
+	width: 20%;
+}
+.sortPanel
+{
+	border-bottom: 2px solid #0E00D6;
+}
+.sortPanel form
+{
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.sortPanel input[type="text"], .sortPanel select
+{
+	font:  700 18px OpenSans;
+	color: red;
+	padding: 2px 7px;
+	background: transparent;
+}
+.sortPanel input[type="submit"]
+{
+	background-color: #FF9C00;
+	color:#fff;
+	font: 600 18px Roboto;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.addFaculty
+{
+	width: 100%;
+	float: left;
+	clear: both;
+	border-bottom: 2px solid #0E00D6;
+	padding: 20px 0;
+}
+.addFaculty h2
+{
+	font:700 24px Roboto;
+	margin:20px;
+	color: #FF9C00;
+}
+.addFaculty form
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.addFaculty form input[type="text"], .addFaculty form select
+{
+	font:  700 18px OpenSans;
+	color: #000;
+	padding: 2px 7px;
+	background: transparent;
+}
+.addFaculty form input[type="submit"]
+{
+	background-color: #FF9C00;
+	color:#fff;
+	font: 600 18px Roboto;
+	padding: 5px 10px;
+	cursor: pointer;
+}
